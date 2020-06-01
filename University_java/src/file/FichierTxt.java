@@ -1,0 +1,26 @@
+package file;
+import java.io.FileWriter;
+import java.nio.charset.Charset;
+import java.nio.file.Path;
+import java.io.File;
+public class FichierTxt {
+public static void main(String [] args){
+try{
+	String filename="C:\\Users\\Lenovo\\Desktop\\gagsag.txt";
+File ff=new File(filename); // définir l'arborescence
+//ff.createNewFile();
+FileWriter ffw=new FileWriter(ff,true);
+File(new File(filename).toPath(), Charset.defaultCharset());
+
+ 
+ffw.write("ffw ");  // écrire une ligne dans le fichier resultat.txt
+ffw.write("\n"); // forcer le passage à la ligne
+ffw.close(); // fermer le fichier à la fin des traitements
+} catch (Exception e) {}
+}
+
+private static void File(Path path, Charset defaultCharset) {
+	// TODO Auto-generated method stub
+	
+}
+}

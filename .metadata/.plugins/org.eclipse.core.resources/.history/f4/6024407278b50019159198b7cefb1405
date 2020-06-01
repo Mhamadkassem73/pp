@@ -1,0 +1,19 @@
+package file;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.net.URI;
+import java.nio.file.*;
+import java.io.File;
+public class FichierTxt {
+public static void main(String [] args){
+try{
+	String filename="C:\\Users\\Lenovo\\Desktop\\ali.txt";
+File ff=new File(filename); // définir l'arborescence
+ff.createNewFile();
+FileWriter ffw=new FileWriter(ff);
+ffw.write("****** ");  // écrire une ligne dans le fichier resultat.txt
+ffw.write("\n"); // forcer le passage à la ligne
+ffw.close(); // fermer le fichier à la fin des traitements
+} catch (Exception e) {}
+}
+}
